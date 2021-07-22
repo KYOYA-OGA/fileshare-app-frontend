@@ -1,11 +1,20 @@
 module.exports = {
-  purge: ["./src/**/*.{ts,tsx}"],
+  purge: ['./src/**/*.{ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        niko: 'Nico Moji',
+      },
+      colors: {
+        yellow: {
+          light: '#F3F7FD',
+        },
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-};
+}
