@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         yellow: {
-          light: '#F3F7FD',
+          light: '#FFC26D',
         },
       },
     },

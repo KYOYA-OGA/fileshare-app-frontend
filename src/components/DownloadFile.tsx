@@ -8,8 +8,7 @@ const DownloadFile: React.FC<Props> = ({ downloadPageLink }) => {
   return (
     <div className="p-1">
       <h1 className="my-2 text-lg font-medium">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
-        incidunt nesciunt qui quia,{' '}
+        下記URLにアクセスしてください
       </h1>
       <div className="flex space-x-3">
         <span className="break-all">{downloadPageLink}</span>

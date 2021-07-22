@@ -24,7 +24,7 @@ const EmailForm: React.FC<Props> = ({ id }) => {
       })
       setMessage(data.message)
     } catch (error) {
-      setMessage(error.data.response.message)
+      setMessage(error.response.data.message)
     }
   }
   return (

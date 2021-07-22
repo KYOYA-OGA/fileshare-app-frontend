@@ -39,13 +39,16 @@ export default function Home() {
   const resetFile = () => {
     setFile(null)
     setDownloadPageLink(null)
+    setUploadState('Upload')
   }
   return (
     <div className="flex flex-col items-center">
       <h1 className="my-4 text-3xl font-niko">
-        あやしいファイルきょうゆうアプリ
+        あやしいファイル
+        <br className="md:hidden" />
+        きょうゆうアプリ
       </h1>
-      <div className="flex flex-col items-center justify-center bg-gray-800 shadow-xl w-96 rounded-xl ">
+      <div className="flex flex-col items-center justify-center w-11/12 bg-gray-800 shadow-xl md:w-96 rounded-xl ">
         {!downloadPageLink && <DropZoneComponent setFile={setFile} />}
         {/* render file */}
         {file && (

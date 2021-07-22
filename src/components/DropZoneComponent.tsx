@@ -7,7 +7,6 @@ interface Props {
 
 const DropZoneComponent: React.FC<Props> = ({ setFile }) => {
   const onDrop = useCallback((acceptedFiles) => {
-    console.log(acceptedFiles)
     setFile(acceptedFiles[0])
   }, [])
 
